@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv='Content-Type' content='text/html;charset=UTF-8' />
+		<script src='calculator.js'> </script>
+	</head>
+	<body class="sapUiBody" role="application">
+		<div id='calculator'>
+			<table border="1">
+				<tr>
+					<td>
+						<input id='calcScreen' value='0'/>
+					</td>
+				</tr>
+				<tr>
+					<table border="1">
+						<tr>
+							<td><button id='key7' onclick='onKeyDigit("7")'>7</button></td>
+							<td><button id='key8' onclick='onKeyDigit("8")'>8</button></td>
+							<td><button id='key9' onclick='onKeyDigit("9")'>9</button></td>
+							<td><button id='key/' onclick='onKeyOperator("/")'>/</button></td>
+						</tr>
+						<tr>
+							<td><button id='key4' onclick='onKeyDigit("4")'>4</button></td>
+							<td><button id='key5' onclick='onKeyDigit("5")'>5</button></td>
+							<td><button id='key6' onclick='onKeyDigit("6")'>6</button></td>
+							<td><button id='key*' onclick='onKeyOperator("*")'>*</button></td>
+						</tr>
+						<tr>
+							<td><button id='key1' onclick='onKeyDigit("1")'>1</button></td>
+							<td><button id='key2' onclick='onKeyDigit("2")'>2</button></td>
+							<td><button id='key3' onclick='onKeyDigit("3")'>3</button></td>
+							<td><button id='key-' onclick='onKeyOperator("-")'>-</button></td>
+						</tr>
+						<tr>
+							<td><button id='key.' onclick='onKeyComma()'>.</button></td>
+							<td><button id='key0' onclick='onKeyDigit("0")'>0</button></td>
+							<td><button id='keyC' onclick='onKeyC()'>C</button></td>
+							<td><button id='key+' onclick='onKeyOperator("+")'>+</button></td>
+						</tr>
+					</table>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>

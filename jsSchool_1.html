@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv='Content-Type' content='text/html;charset=UTF-8' />
+	</head>
+	<body class="sapUiBody" role="application">
+		<input id='width'></input>
+		<input id='height'></input>
+		<button id='setRect' onClick='setRectangle()'>Set Rectangle</button>
+		<div id="content">sdfsdf</div>
+	</body>
+	<script>
+		function setRectangle() {
+			var res = document.getElementById('content');
+			var width = document.getElementById('width').value;
+			var height = document.getElementById('height').value;
+			
+			//input validation
+			if (isNaN(width) || isNaN(height)){
+				alert('please enter numbers');
+				return;
+			} else {
+				width = parseFloat(width);
+				height = parseFloat(height);
+			
+				if ( width > height ) {
+					res.innerHTML = width.toString(2);
+				} else if ( width < height ) {
+					res.innerHTML = height;
+				} else {
+					res.innerHTML = 'They are the same';
+				}
+				return;
+			}
+			
+			do {
+				if (1)
+					if
+				break;
+				sda
+				
+				if 
+			} while(false)
+			
+			var calculate = function(x, y) {
+				width = 10;
+				console.log("in calculate width = " + width);
+				
+				return x*y; 
+			} 
+			console.log("in setRectangle width = " + width);
+			res.innerHTML = calculate(width, height);
+			console.log("in setRectangle after calculation width = " + width);
+			var test = checkWidth();
+		}
+		function checkWidth() {
+			console.log("outside width = " + typeof width);
+		}
+	</script>
+</html>

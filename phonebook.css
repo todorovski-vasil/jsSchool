@@ -1,0 +1,66 @@
+body > div {
+	align-content: center;
+	width: 20rem;
+	height: 30rem;
+	color: black;
+	//background: red;
+}
+
+#phoneBook {
+	width: 50rem;
+}
+
+#inputBox {
+	width: 50rem;
+}
+
+#inputBox > input {
+	width: 12rem;
+}
+
+table {
+	width: 100%;
+}
+
+#tableHeader {
+	width: 100%;	
+	border: 1px solid black;
+}
+
+#tableHeader > td {
+	width: 12.5rem;
+}
+
+#calcScreen {
+	width: 100%;
+	height: 2em;
+	text-align: right;
+}
+
+div > span {
+	padding-top: 1em;
+	padding-left: 0.1em;
+	float: left;
+	/*text-align: center;*/
+	/*display: block;*/
+	width: 4.75em;
+	height: 2em;
+	background: gray;
+	border: 5px;
+	border-color: darkgray;
+	border: 0.1em;
+	border-style: solid;
+}
+
+span > span {
+	display: inline-block;
+	float: left;
+	width: inherit;
+	line-height: 1em;
+	text-align: center;
+}
+
+/*#key7{
+	width: 5em;
+	border: 1px;
+}*/
