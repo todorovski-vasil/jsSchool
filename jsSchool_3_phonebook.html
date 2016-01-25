@@ -11,15 +11,26 @@
 				<input id='name'/>
 				<input id='surname'/>
 				<input id='phone'/>
-				<input id='adress'/>
+				<input id='address'/>
+				<button id='add'>Add</button>
 			</div>
 			<table id='phoneBookTable'>
-				<tr id='tableHeader'>
-					<td>Name</td>
-					<td>Surname</td>
-					<td>Phone</td>
-					<td>Address</td>
-				</tr>
+				<thead>
+					<tr id='tableHeader'>
+						<th id='thName'>Name</th>
+						<th id='thSurname'>Surname</th>
+						<th id='thPhone'>Phone</th>
+						<th id='thAddress'>Address</th>
+						<th id='thCheckbox'><input type="checkbox"/></th>
+					</tr>
+				</thead>
+				<tfoot>
+					<tr>
+						<td>
+							<button onclick=deleteSelectedRecords()>Delete selected</button>
+						</td>
+					</tr>
+				</tfoot>
 			</table>
 		</div>
 	</body>

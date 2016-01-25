@@ -7,28 +7,64 @@ body > div {
 }
 
 #phoneBook {
-	width: 50rem;
+	width: 52rem;
+	margin: auto;
+	text-align: center;
 }
 
 #inputBox {
-	width: 50rem;
+	width: 100%;
+	display: inline-block;
+	text-align: left;
 }
 
 #inputBox > input {
-	width: 12rem;
+	width: 22%;
+}
+
+#inputBox > #add {
+	width:8%;
+	height: inherit;
+	display: inline-block
 }
 
 table {
 	width: 100%;
+
 }
+
+table > thead {
+	width: 100%;
+}
+
+#thName {
+	width: 23%;
+}
+
+#thSurname {
+	width: 23%;
+}
+
+#thPhone {
+	width: 23%;
+}
+
+#thAddress {
+	width: 23%;
+}
+
+#thCheckbox {
+	width: 8%;
+}
+
+table > tbody {
+	width: 100%;
+}
+
 
 #tableHeader {
-	width: 100%;	
+	width: 100%;
 	border: 1px solid black;
-}
-
-#tableHeader > td {
-	width: 12.5rem;
 }
 
 #calcScreen {
@@ -36,13 +72,11 @@ table {
 	height: 2em;
 	text-align: right;
 }
-
+/*
 div > span {
 	padding-top: 1em;
 	padding-left: 0.1em;
 	float: left;
-	/*text-align: center;*/
-	/*display: block;*/
 	width: 4.75em;
 	height: 2em;
 	background: gray;
@@ -50,7 +84,7 @@ div > span {
 	border-color: darkgray;
 	border: 0.1em;
 	border-style: solid;
-}
+}*/
 
 span > span {
 	display: inline-block;

@@ -23,10 +23,11 @@ document.getElementById('keyC').addEventListener('click', onKeyC);
 for(var i=0; i<10; i++){
 	var id = 'key' + i.toString();
 
-	document.getElementById(id).addEventListener('mousedown', function(){
-		document.getElementById(id.slice(0)).style.backgroundColor = 'green'; });
-	document.getElementById(id).addEventListener('mouseup', function(){
-		document.getElementById(id.slice(0)).style.backgroundColor = 'grey'; });
+	document.getElementById(id).addEventListener('mousedown', function(event){
+		event.currentTarget.style.backgroundColor = 'green'; });
+		
+	document.getElementById(id).addEventListener('mouseup', function(id){
+		event.currentTarget.style.backgroundColor = 'grey'; });
 }
 // document.getElementById('key1').addEventListener('mousedown', function(){
 // 	document.getElementById('key1').style.backgroundColor = 'green'; });
