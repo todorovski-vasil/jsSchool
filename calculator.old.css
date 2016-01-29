@@ -1,0 +1,51 @@
+body > div {
+	align-content: center;
+	width: 20em;
+	height: 30em;
+	/*color: black;*/
+}
+
+body > div > div {
+	/*! display: block; */
+	width: 20em;
+	width: inherit;
+}
+
+#calcScreen {
+	width: 97.5%;
+	height: 2em;
+	text-align: right;
+}
+
+div > span {
+	padding-top: 1em;
+	padding-left: 0.1em;
+	float: left;
+	/*text-align: center;*/
+	/*display: block;*/
+	width: 4.75em;
+	height: 2em;
+	background: darkgray;
+	border: 0.1em solid yellow;
+}
+
+div > span:hover {
+	background: grey;
+}
+
+div > span:active {
+	background: yellow;
+}
+
+span > span {
+	display: inline-block;
+	float: left;
+	width: inherit;
+	line-height: 1em;
+	text-align: center;
+}
+
+/*#key7{
+	width: 5em;
+	border: 1px;
+}*/

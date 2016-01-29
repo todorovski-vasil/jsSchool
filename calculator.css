@@ -1,44 +1,42 @@
 body > div {
-	align-content: center;
-	width: 20em;
-	height: 30em;
-	color: black;
-	//background: red;
-}
+  align-content: center;
+  width: 20.5em;
+  height: 30em;
+  /*color: black;*/ }
 
 body > div > div {
-	/*display: block;*/
-	width: 20em;
-}
+  /*! display: block; */
+  width: 20.5em;
+  width: inherit; }
 
 #calcScreen {
-	width: 100%;
-	height: 2em;
-	text-align: right;
-}
+  width: 100%;
+  height: 2em;
+  border: none;
+  text-align: right;
+  background: black;
+  color: yellow; }
 
 div > span {
-	padding-top: 1em;
-	padding-left: 0.1em;
-	float: left;
-	/*text-align: center;*/
-	/*display: block;*/
-	width: 4.75em;
-	height: 2em;
-	background: gray;
-	border: 5px;
-	border-color: darkgray;
-	border: 0.1em;
-	border-style: solid;
-}
+  padding-top: 1em;
+  float: left;
+  /*text-align: center;*/
+  /*display: block;*/
+  width: 5em;
+  height: 2em;
+  background: green;
+  border: 0.1em solid yellow; }
+  div > span:hover {
+    background: yellow; }
+  div > span:active {
+    background: red; }
 
 span > span {
-	display: inline-block;
-	float: left;
-	width: inherit;
-	line-height: 1em;
-	text-align: center;
-}
+  display: inline-block;
+  float: left;
+  width: inherit;
+  line-height: 1em;
+  text-align: center; }
 
 /*#key7{
 	width: 5em;

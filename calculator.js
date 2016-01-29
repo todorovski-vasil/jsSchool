@@ -3,16 +3,22 @@ var oldValue = 0;
 var selectedOperator = '';
 var commaExists = false;
 
-document.getElementById('key1').addEventListener('click', function(){ onKeyDigit('1'); });
-document.getElementById('key2').addEventListener('click', function(){ onKeyDigit('2'); });
-document.getElementById('key3').addEventListener('click', function(){ onKeyDigit('3'); });
-document.getElementById('key4').addEventListener('click', function(){ onKeyDigit('4'); });
-document.getElementById('key5').addEventListener('click', function(){ onKeyDigit('5'); });
-document.getElementById('key6').addEventListener('click', function(){ onKeyDigit('6'); });
-document.getElementById('key7').addEventListener('click', function(){ onKeyDigit('7'); });
-document.getElementById('key8').addEventListener('click', function(){ onKeyDigit('8'); });
-document.getElementById('key9').addEventListener('click', function(){ onKeyDigit('9'); });
-document.getElementById('key0').addEventListener('click', function(){ onKeyDigit('0'); });
+// document.getElementById('key1').addEventListener('click', function(){ onKeyDigit('1'); });
+// document.getElementById('key2').addEventListener('click', function(){ onKeyDigit('2'); });
+// document.getElementById('key3').addEventListener('click', function(){ onKeyDigit('3'); });
+// document.getElementById('key4').addEventListener('click', function(){ onKeyDigit('4'); });
+// document.getElementById('key5').addEventListener('click', function(){ onKeyDigit('5'); });
+// document.getElementById('key6').addEventListener('click', function(){ onKeyDigit('6'); });
+// document.getElementById('key7').addEventListener('click', function(){ onKeyDigit('7'); });
+// document.getElementById('key8').addEventListener('click', function(){ onKeyDigit('8'); });
+// document.getElementById('key9').addEventListener('click', function(){ onKeyDigit('9'); });
+// document.getElementById('key0').addEventListener('click', function(){ onKeyDigit('0'); });
+for (var i=0; i<10; i++) {
+	document.getElementById('key' + i).addEventListener('click', function(event){
+		onKeyDigit(event.currentTarget.id.slice(3,4));
+	});
+}
+
 document.getElementById('key.').addEventListener('click', onKeyComma);
 document.getElementById('key+').addEventListener('click', function(){ onKeyOperator('+'); });
 document.getElementById('key-').addEventListener('click', function(){ onKeyOperator('-'); });
@@ -20,15 +26,15 @@ document.getElementById('key*').addEventListener('click', function(){ onKeyOpera
 document.getElementById('key/').addEventListener('click', function(){ onKeyOperator('/'); });
 document.getElementById('keyC').addEventListener('click', onKeyC);
 
-for(var i=0; i<10; i++){
-	var id = 'key' + i.toString();
-
-	document.getElementById(id).addEventListener('mousedown', function(event){
-		event.currentTarget.style.backgroundColor = 'green'; });
-		
-	document.getElementById(id).addEventListener('mouseup', function(id){
-		event.currentTarget.style.backgroundColor = 'grey'; });
-}
+// for(var i=0; i<10; i++){
+// 	var id = 'key' + i.toString();
+//
+// 	document.getElementById(id).addEventListener('mousedown', function(event){
+// 		event.currentTarget.style.backgroundColor = 'green'; });
+//
+// 	document.getElementById(id).addEventListener('mouseup', function(event){
+// 		event.currentTarget.style.backgroundColor = 'grey'; });
+// }
 // document.getElementById('key1').addEventListener('mousedown', function(){
 // 	document.getElementById('key1').style.backgroundColor = 'green'; });
 

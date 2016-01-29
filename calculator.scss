@@ -1,0 +1,61 @@
+$primary_color: green;
+$hover_color: yellow;
+$active_color: red;
+$input_color: black;
+$button_width: 5em;
+$border_size: 0.1em;
+
+body > div {
+	align-content: center;
+	width: $button_width*4 + $border_size*5;
+	height: 30em;
+	/*color: black;*/
+}
+
+body > div > div {
+	/*! display: block; */
+	width: ($button_width * 4) + ($border_size * 5);
+	width: inherit;
+}
+
+#calcScreen {
+	width: 100%;
+	height: 2em;
+	border: none;
+	text-align: right;
+	background: $input_color;
+	color: $hover_color;
+}
+
+div > span {
+	padding-top: 1em;
+	// padding-left: 0.1em;
+	float: left;
+	/*text-align: center;*/
+	/*display: block;*/
+	width: $button_width;
+	height: 2em;
+	background: $primary_color;
+	border: $border_size solid yellow;
+
+	&:hover {
+		background: $hover_color;
+	}
+
+	&:active {
+		background: $active_color;
+	}
+}
+
+span > span {
+	display: inline-block;
+	float: left;
+	width: inherit;
+	line-height: 1em;
+	text-align: center;
+}
+
+/*#key7{
+	width: 5em;
+	border: 1px;
+}*/
